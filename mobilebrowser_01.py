@@ -40,7 +40,7 @@ dag = dag,
 env = env,
 task_id = 'DecodeLogFlow_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/DecodeLogFlow_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 1 * * *',
 doc_md = u"""
 run.sh,decode preday raw log
@@ -51,7 +51,7 @@ dag = dag,
 env = env,
 task_id = 'SplitLogFiles',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/SplitFiles',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '24 1 * * *',
 doc_md = u"""
 rely on preday result of task DecodeLogFlow_day of this dag
@@ -64,7 +64,7 @@ dag = dag,
 env = env,
 task_id = 'SplitLogFiles_android',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/SplitFiles',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '24 1 * * *',
 doc_md = u"""
 rely on preday result of task DecodeLogFlow of dag mobilebrowser_hour.py
@@ -77,7 +77,7 @@ dag = dag,
 env = env,
 task_id = 'SplitLogFiles_ios',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/SplitFiles',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '24 1 * * *',
 doc_md = u"""
 rely on preday result of task DecodeLogFlow of dag mobilebrowser_hour.py
@@ -90,7 +90,7 @@ dag = dag,
 env = env,
 task_id = 'SplitLogFiles_sdk',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/SplitFiles',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '24 1 * * *',
 doc_md = u"""
 rely on preday result of task DecodeLogFlow of dag mobilebrowser_hour.py
@@ -103,7 +103,7 @@ dag = dag,
 env = env,
 task_id = 'SplitLogFiles_others',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/SplitFiles',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '24 1 * * *',
 doc_md = u"""
 rely on preday result of task DecodeLogFlow of dag mobilebrowser_hour.py
@@ -116,7 +116,7 @@ dag = dag,
 env = env,
 task_id = 'dau_newer',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/dau_newer',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 1 * * *',
 doc_md = u"""
 result:${DAU_PATH_NEW},${HISTORIER_NEW},${NEWER_PATH_NEW}
@@ -127,7 +127,7 @@ dag = dag,
 env = env,
 task_id = 'MovePhp_UserStat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/allUserStat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 1 * * *',
 doc_md = u"""
 产生老的日活文件和30天留存数据等
@@ -141,7 +141,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20161227_version_pv_uv_config',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/20161227_version_pv_uv_config',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 1 * * *',
 doc_md = u"""
 mysql:mse_version_pvuv_stat2_new
@@ -152,7 +152,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20190128_sysversion_pv_uv_config',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/20190128_sysversion_pv_uv_config',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 1 * * *',
 doc_md = u"""
 mysql:mse_sysversion_pvuv_stat2_new
@@ -163,7 +163,7 @@ dag = dag,
 env = env,
 task_id = 'MovePhp_NewerRetainRate',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/userStatUpdate',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 2 * * *',
 doc_md = u"""
 update table (android_versionUid_stat_new,android_channelUid_stat_new,android_firstChannelUid_stat_new,versionUid_stat_new,channelUid_stat_new) some columns
@@ -175,7 +175,7 @@ dag = dag,
 env = env,
 task_id = 'mse_alltype_dauretain',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_alltype_dauretain',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 relay on DAU_PATH_NEW
@@ -191,7 +191,7 @@ dag = dag,
 env = env,
 task_id = 'adjustAllNewRetain_combine',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/adjustAllNewRetain',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 2 * * *',
 doc_md = u"""
 mysql:plat_version_stat_new,plat_channel_stat_new,plat_fchannel_stat_new
@@ -203,7 +203,7 @@ dag = dag,
 env = env,
 task_id = 'adjustAllNewRetain_alive',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/adjustAllNewRetain',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 1 * * *',
 doc_md = u"""
 mysql:plat_version_alive_new,plat_fchannel_alive_new,plat_channel_alive_new
@@ -214,7 +214,7 @@ dag = dag,
 env = env,
 task_id = 'adjustAllNewRetain_survive',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/adjustAllNewRetain',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '15 2 * * *',
 doc_md = u"""
 mysql:plat_version_survive_new,plat_fchannel_survive_new,plat_channel_survive_new
@@ -226,7 +226,7 @@ dag = dag,
 env = env,
 task_id = 'mse_novel_sdk_verratio',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/mse_novel_sdk_verratio',
-bash_command ='sleep 10', 
+bash_command ='sleep 120', 
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:novel_sdk_version_ratio
@@ -238,7 +238,7 @@ dag = dag,
 env = env,
 task_id = 'mse_android_GetAndroidSdkMiniLog',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/AndroidSdkMiniLog',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '50 0 * * *',
 doc_md = u"""
 android sdkmini log parse
@@ -250,7 +250,7 @@ dag = dag,
 env = env,
 task_id = 'mse_sdk_allObjectPingBack2',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_sdk_allObjectPingBack2',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '45 1 * * *',
 doc_md = u"""
 mysql:sdk_android_windows2_new,sdk_android_notshown_new
@@ -261,7 +261,7 @@ dag = dag,
 env = env,
 task_id = 'mse_SdkPushDesktopClick',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_SdkPushDesktopClick',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 1 * * *',
 doc_md = u"""
 mysql:semob_all_tbl_push_desktop_total_new,semob_android_tbl_TipsSpread_adjust_new
@@ -272,7 +272,7 @@ dag = dag,
 env = env,
 task_id = 'minibrowser',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/minibrowser',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '40 0 * * *',
 doc_md = u"""
 生成mini浏览器的历史用户文件和新用户文件
@@ -284,7 +284,7 @@ dag = dag,
 env = env,
 task_id = 'mse_minibasicdata',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_minibasicdata',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '43 0 * * *',
 doc_md = u"""
 taurus表路径：商业业务>手机浏览器>手机浏览器 - 新Mini浏览器统计（输入法）>新mini浏览器H5页面-用户数统计
@@ -296,7 +296,7 @@ dag = dag,
 env = env,
 task_id = 'mse_android_resolutionnwer_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/20141218_mse_resolutionnwer_stat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 手机浏览器android版本新用户的分辨率统计，对应的绿皮为【手机浏览器 - android status统计】-【新增用户设备分辨率】；
@@ -308,7 +308,7 @@ dag = dag,
 env = env,
 task_id = 'mse_Movephp_allValuesPingBacksByChannel',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/MovePhp/allValuesPingBacksByChannel',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 手机浏览器android与ios客户端数值型pingback参数按照渠道的统计，对应的绿皮为【手机浏览器 - 搜索推荐插件】
@@ -320,7 +320,7 @@ dag = dag,
 env = env,
 task_id = 'mse_newusers_deviceManagement',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/mse_newusers_deviceManagement',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 推广数据,功能统计
@@ -332,7 +332,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20161104_search_word_stats',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20161104_search_word_stats',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 20161104_search_word_stats
@@ -344,7 +344,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20161212_SDK_jiesuan',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20161212_SDK_jiesuan',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 20161212_SDK_jiesuan
@@ -357,7 +357,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20161226_uuid_distribution',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/datasprite/20161226_uuid_distribution',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 绿皮 》 手机浏览器-Android Status统计 》  A/B Test 用户划分数据:http://grape.sogou-inc.com/analysisapply/showapplyinfo.do?id=9b57027466594b78a58c4e10058d9b0a
@@ -369,7 +369,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20161229_status_stats',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/datasprite/20161229_status_stats',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 20161229_status_stats
@@ -383,7 +383,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20170110_mse_abtest_1_7alive_stats',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/datasprite/20170110_mse_abtest_1_7alive_stats',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 手机浏览器 - 资讯沉浸模式ABtest 基础统计报表 
@@ -395,7 +395,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20161021_mse_1_30installretains',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/20161021_mse_1_30installretains',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:mse_fchannel_reserved_install_survive
@@ -406,7 +406,7 @@ dag = dag,
 env = env,
 task_id = 'mse_120_install_retains',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_120_install_retains',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 9 * * *',
 doc_md = u"""
 mysql:mse_fchannel_reserved_install_survive_120
@@ -418,7 +418,7 @@ dag = dag,
 env = env,
 task_id = 'mse_fchannel_retains_alert',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20170224_channelretains_alert',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:mse_fchannel_retains_alert
@@ -429,7 +429,7 @@ dag = dag,
 env = env,
 task_id = 'mse_lockscreen_retain_android',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/mse_lockscreen_retain_android',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 taurus表：商业业务>手机浏览器>手机浏览器 - 推送通知统计>锁屏消息对留存率影响统计（路径下所有表）
@@ -442,7 +442,7 @@ dag = dag,
 env = env,
 task_id = 'mse_groupbysufuid_pvuv',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/mse_groupbysufuid_pvuv',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 taurus表：商业业务>手机浏览器>手机浏览器-信息流数据>按尾号分组的两张表
@@ -455,7 +455,7 @@ dag = dag,
 env = env,
 task_id = 'mse_timeconsuming_pvuv',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/mse_timeconsuming_pvuv',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 taurus表：商业业务>手机浏览器>手机浏览器-信息流数据>耗时数据汇总-Android-v5.9.2
@@ -467,7 +467,7 @@ dag = dag,
 env = env,
 task_id = 'mse_newsfeed_ver',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/mse_newsfeed_ver',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 taurus路径：商业业务>手机浏览器>手机浏览器-信息流数据>分版本数据-Android-v1.1  && 分版本数据-iOS-v1.1
@@ -479,7 +479,7 @@ dag = dag,
 env = env,
 task_id = 'mse_newsfeed_region',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/mse_newsfeed_region',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 taurus报表：商业业务>手机浏览器>手机浏览器-信息流数据>分地域数据-Android  && 分地域数据-iOS
@@ -491,7 +491,7 @@ dag = dag,
 env = env,
 task_id = 'mse_newspush_uid_abtest',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/mse_newspush_uid_abtest',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 taurus表：商业业务>手机浏览器>手机浏览器-信息流数据>push实验数据>个性化push-ab实验（分组用户数据）
@@ -503,7 +503,7 @@ dag = dag,
 env = env,
 task_id = 'mse_zixunnews_c_fc',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/mse_zixunnews_c_fc',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 taurus表：商业业务>手机浏览器>手机浏览器-信息流数据>列表页展现点击数据Android-分原始渠道 && 列表页展现点击数据Android-分渠道
@@ -515,7 +515,7 @@ mysql表：mse_zixunnews_c_fc
 #env = env,
 #task_id = 'mse_SdkPushDesktopClick1',
 #svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/mse-PushDesktopClick',
-#bash_command ='sleep 10',
+#bash_command ='sleep 120',
 #schedule_interval = '40 6 * * *',
 #doc_md = u"""
 #description:是小p手浏日活的数据，和任务mse_SdkPushDesktopClick重复，迁移完成后应该被删除.
@@ -528,7 +528,7 @@ dag = dag,
 env = env,
 task_id = 'mse_Movephp_StatPingBacks',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/MovePhp/allStatePingBacks',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 重构手浏统计中状态类PingBack的统计，包含安卓以及ios
@@ -541,7 +541,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20161220_version_abtest_top500',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/datasprite/20161220_version_abtest_top500',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 20161220_version_abtest_top500
@@ -557,7 +557,7 @@ dag = dag,
 env = env,
 task_id = 'mse_navitable_countandretain_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/20141010_chenggang_semob_navitable_stat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 网址大全各分类中按钮、内容、地址以及相关留存率的统计（android以及ios），对应绿皮中的【手机浏览器 - 网址大全统计】,
@@ -571,7 +571,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20161224_version_abtest_pvuv',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/datasprite/20161224_version_abtest_pvuv',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 20161224_version_abtest_pvuv
@@ -583,7 +583,7 @@ dag = dag,
 env = env,
 task_id = 'mse_new_version_fchannel_information',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/datasprite/mse_new_version_fchannel_information',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mse_new_version_fchannel_information
@@ -596,7 +596,7 @@ dag = dag,
 env = env,
 task_id = 'mse_pushflow_dis_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20170502_pushflow_dis_stat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 手机浏览器android版本关于下发条数的分布，对应的绿皮为所有项目>商业业务>手机浏览器>手机浏览器 - 推送通知统计>新Android推送通知统计>展示通知条数的用户分布（5.3.1以上版本）,
@@ -608,7 +608,7 @@ dag = dag,
 env = env,
 task_id = 'mse_translator_pvuv',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/mse_translate_pvuv_count',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 全文翻译的功能统计
@@ -620,7 +620,7 @@ dag = dag,
 env = env,
 task_id = 'mse_newsconsume_pvuv',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/mse_newsconsume_pvuv',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 taurus表：商业业务>手机浏览器>手机浏览器-信息流数据>消费数据汇总-Android--v1.1  &&  商业业务>手机浏览器>手机浏览器-信息流数据>消费数据汇总-iOS--v1.1
@@ -632,7 +632,7 @@ dag = dag,
 env = env,
 task_id = 'mse_iqiyicoopration_anroid',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/mse_iqiyicoopration_anroid',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 taurus表：爱奇艺合作评估数据
@@ -644,7 +644,7 @@ dag = dag,
 env = env,
 task_id = 'mse_GetguanwangLog',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/GetGuanwangLog',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '20 2 * * *',
 doc_md = u"""
 获取手机手机浏览器官网日志
@@ -656,7 +656,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20161216_mse_reading_stats',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/datasprite/20161216_mse_reading_stats',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mse_20161216_mse_reading_stats
@@ -669,7 +669,7 @@ dag = dag,
 env = env,
 task_id = 'mse_novel_msesogoucom_total',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/mse_novel_msesogoucom_total',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mse.sogou.com官网访问的统计，绿皮显示为手机浏览器-小说中心统计，
@@ -681,7 +681,7 @@ dag = dag,
 env = env,
 task_id = 'mse_novel_all_movenovel_visitUserStat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/20141229_MoveNovelCenter/visitUserStat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
  手机浏览器android、ios版本小说中心、阅读页详细页的统计。对应绿皮为【手机浏览器 - 小说中心统计】-【总访问量统计，v3,v3】。对应mysql数据表为novel_total_access_count（v2,v3）
@@ -693,7 +693,7 @@ dag = dag,
 env = env,
 task_id = 'mse_novel_all_movenovel_valuesPagesStat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/20141229_MoveNovelCenter/valuesPagesStat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 手机浏览器android、ios版本小说中心、阅读页详细页的统计。对应绿皮为【手机浏览器 - 小说中心统计】,多列数值的统计项
@@ -705,7 +705,7 @@ dag = dag,
 env = env,
 task_id = 'mse_novel_all_movenovel_catePagesStat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/20141229_MoveNovelCenter/catePagesStat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 手机浏览器android、ios版本小说中心、阅读页详细页的统计。对应绿皮为【手机浏览器 - 小说中心统计】,包含所有分类的统计
@@ -717,7 +717,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20160930_cooperation_guanwang_stats',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20160930_cooperation_guanwang_stats',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 官网服务器 各合作方访问数
@@ -729,7 +729,7 @@ dag = dag,
 env = env,
 task_id = 'mse_novelgidcount_pvuv',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/mse_novelgidcount_pvuv',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:mse_novelgidcount_pvuv
@@ -740,7 +740,7 @@ dag = dag,
 env = env,
 task_id = 'mse_sdk_20151215_mengwei_sdkfloat_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/20151215_mengwei_sdkfloat_stat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 手机浏览器mini在图标展示、常驻通知栏、悬浮图标三种调起行为下对应的行为以及搜索词统计。对应的绿皮为[手机浏览器 - mini浏览器统计]、[手浏热词推广 - 常驻置顶通知栏]、[手浏热词推广 - 桌面悬浮图标]下【用户行为数据】>、【地址栏搜索词】
@@ -752,7 +752,7 @@ dag = dag,
 env = env,
 task_id = 'mse_sdkmini_calls_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/20160105_mengwei_mini_calls_stat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 手机浏览器sdkmini版本三种调起方式的统计，对应的绿皮为：【手机浏览器 - mini浏览器统计】-【mini浏览器主动日活统计】，
@@ -764,7 +764,7 @@ dag = dag,
 env = env,
 task_id = 'mse_SdkMiniStat_allValuesPingBacks',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/SdkMiniStat/allValuesPingBacks',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 手机浏览器sdk-mini版本数值型参数统计，对应的绿皮为【手机浏览器 - mini浏览器统计】，
@@ -776,7 +776,7 @@ dag = dag,
 env = env,
 task_id = 'sdk_uninstall_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/20140825_mengwei_uninstall_stat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 安卓按渠道卸载率统计
@@ -788,7 +788,7 @@ dag = dag,
 env = env,
 task_id = 'semob_android_status_rate',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/semob_android_status_rate',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 用户网络、硬件版本的比例统计
@@ -800,7 +800,7 @@ dag = dag,
 env = env,
 task_id = 'PingbackCompetingAppName_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/PingbackCompetingAppName',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 根据Pingback判断app名称（qq,uc等）的统计
@@ -812,7 +812,7 @@ dag = dag,
 env = env,
 task_id = 'novel_center_user_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/novel_center_user_stat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:novel_center_user_count
@@ -823,7 +823,7 @@ dag = dag,
 env = env,
 task_id = 'mse_novel_retain_rate',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/mse_novel_retention',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '50 9 * * *',
 doc_md = u"""
 计算小数中心总体以及阅读页的留存率统计，绿皮显示为手机浏览器-小说中心统计，对应的mysql数据库为novel_retention
@@ -834,7 +834,7 @@ dag = dag,
 env = env,
 task_id = 'semob_all_tbl_novel_shelf_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/20141015_linweiguo_novel_bookshelf_stat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:semob_all_tbl_novel_shelf_stat
@@ -845,7 +845,7 @@ dag = dag,
 env = env,
 task_id = 'mse_android_wakeupqunicklunch_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/20141215_mse_wakeup_stat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 手机浏览器安卓版本的唤醒相关统计，以及同时访问快速访问与网址大全的统计。相应的绿皮为：【手机浏览器 - android用户数】- 外部调起人数次数、【手机浏览器 - android功能统计】- 同时访问快速访问与网址大全的统计；对应的
@@ -857,7 +857,7 @@ dag = dag,
 env = env,
 task_id = 'mse_alll_CatesAll_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/20150610_linweiguo_CatesAll_retian',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 手机浏览器渠道分类汇总统计
@@ -869,7 +869,7 @@ dag = dag,
 env = env,
 task_id = 'mse_mininavi_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/20150803_mengwei_mininavi_stat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '59 8 * * *',
 doc_md = u"""
 mini浏览器页面导航统计，对应的数据库表名为sdkmini_tbl_NaviUrl
@@ -880,7 +880,7 @@ dag = dag,
 env = env,
 task_id = 'mse_SdkMiniStat_allUserStat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/SdkMiniStat/allUserStat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '14 8 * * *',
 doc_md = u"""
 """)
@@ -890,7 +890,7 @@ dag = dag,
 env = env,
 task_id = 'mse_all_appsdownload_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/20150428_liubo_appsdownload',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 手机浏览器应用下载统计，对应的绿皮为【手机浏览器 - 应用下载】，对应mysql数据库为：mse_all_appsdownload_stat
@@ -901,7 +901,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20170116_mse_1_30aliveretains_chidongfang_huice',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/datasprite/20170116_mse_1_30aliveretains_chidongfang_huice',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:mse_huice_alive_survive
@@ -912,7 +912,7 @@ dag = dag,
 env = env,
 task_id = 'mse_ads_showclick_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20170313_ads_showclick_stat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:mse_ads_showclicks_check
@@ -923,7 +923,7 @@ dag = dag,
 env = env,
 task_id = 'mse_hijackdownloadappincome_android',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/mse_hijackdownloadappincome_android',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 统计劫持下载流量相关指标
@@ -935,7 +935,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20160905_mse_1_30installretains',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20160905_mse_1-30installretains',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 按原始渠道新增留存
@@ -947,7 +947,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20160905_mse_1_30aliveretains',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20160905_mse_1-30aliveretains',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 活跃留存
@@ -959,7 +959,7 @@ dag = dag,
 env = env,
 task_id = 'mse_bds_channels_data',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20170303_bds_channels_data',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '38 9 * * *',
 doc_md = u"""
 手机浏览器各商业业务部商务数据进行汇总，相应的数据从超级白皮获取。对应的绿皮为【手机浏览器 - android用户数】-【android手机浏览器渠道分类汇总】-【外购数据统计】
@@ -971,7 +971,7 @@ dag = dag,
 env = env,
 task_id = 'mse_channel_class_stats',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/mse_channel_class_stats',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '09 8 * * *',
 doc_md = u"""
 mysql:mse_channel_class_stats,mse_channel_class_stats_op_all,mse_channel_class_stats_op_class,mse_channel_class_stats_subchannel,mse_fchannel_type,mse_channel_bygroup
@@ -983,7 +983,7 @@ dag = dag,
 env = env,
 task_id = 'mse_channel_full_infos',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/mse_channel_full_infos',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '00 2 * * *',
 doc_md = u"""
 mysql表:生成渠道相关信息，供其他任务使用mse_channel_full_infos
@@ -994,7 +994,7 @@ mysql表:生成渠道相关信息，供其他任务使用mse_channel_full_infos
 #env = env,
 #task_id = 'semob_android_chenjinabtest_fchannelneweretains',
 #svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20170511_chenjin_abtest_1-30newerretains',
-#bash_command ='sleep 10',
+#bash_command ='sleep 120',
 #schedule_interval = '50 10 * * *',
 #doc_md = u"""
 #mysql:semob_android_chenjinabtest_fchannelneweretains
@@ -1005,7 +1005,7 @@ dag = dag,
 env = env,
 task_id = 'mse_channel_information_uvpv',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/mse_channel_information_uvpv',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:mse_channel_uvpv_stat1
@@ -1016,7 +1016,7 @@ dag = dag,
 env = env,
 task_id = 'mse_detailads_show_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20170516_ads_show_stat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 6 * * *',
 doc_md = u"""
 手机浏览器详情页广告展现与点击的统计，对应的绿皮统计表格为【商业业务>手机浏览器>手浏-运营数据-质量监控>新版-渠道质量分析】，对应的数据表为：mse_channel_uvpv_stat1，日志来源为客户端日志以及ping.hotspot.ie.sogou.com/zixun.gif的日志
@@ -1028,7 +1028,7 @@ dag = dag,
 env = env,
 task_id = 'mse_android_allchannels_newerlogoretains_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/20160121_mengwei_allchannels_logoretains',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '49 1 * * *',
 doc_md = u"""
 mysql:手机浏览器android版本按原始渠道号统计绝对新增7日点击图标主动留存,logo_retain of plat_fchannel_stat_new && android_firstChannelUid_stat_new
@@ -1039,7 +1039,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20161205_mse_1_60installretain',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20161205_mse_1_60installretain',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:mse_channel_class_op_survive_class
@@ -1050,7 +1050,7 @@ dag = dag,
 env = env,
 task_id = 'mse_zixun_server_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20170328_zixun_server_stat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:mse_zixun_server_stat
@@ -1061,7 +1061,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20160125_taoge_1_30newerretains',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20160125_taoge_1-30newerretains',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:semob_android_tbl_monthall_neweretains
@@ -1072,7 +1072,7 @@ dag = dag,
 env = env,
 task_id = 'Semob_antiFakeSDKLog',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/anticheating_mobilebrowser/semobAntiFakeLog',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '00 2 * * *',
 doc_md = u"""
 semob，反作弊sdk log解析，json格式
@@ -1084,7 +1084,7 @@ dag = dag,
 env = env,
 task_id = 'semob_channelUvIp_jinchenxi',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/anticheating_mobilebrowser/semobChannelIp',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 手机浏览器渠道ip分布，用于手浏反作弊
@@ -1096,7 +1096,7 @@ dag = dag,
 env = env,
 task_id = 'mse_all_GetIosBrushlLog',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/GetIosBrushlLog',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 1 * * *',
 doc_md = u"""
 result:${LOG_CLIENT}/iosbrush
@@ -1108,7 +1108,7 @@ dag = dag,
 env = env,
 task_id = 'mse_iosbrush_lanmao_retain',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20170203_ioslanmao_stat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '30 1 * * *',
 doc_md = u"""
 mysql:semob_iosbrush_tbl_monthall_neweretains
@@ -1119,7 +1119,7 @@ dag = dag,
 env = env,
 task_id = 'mse_ioslanmao_pings_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20170213_ioslanmao_pings_stat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '40 1 * * *',
 doc_md = u"""
 mysql:semob_iosbrush_pings_stat
@@ -1131,7 +1131,7 @@ dag = dag,
 env = env,
 task_id = 'mse_android_effectiveuser_channel',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/effective_user_channel_android',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '30 2 * * *',
 doc_md = u"""
 mysql:semob_android_effective_user
@@ -1143,7 +1143,7 @@ dag = dag,
 env = env,
 task_id = 'mse_new_cost_zixun',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/mse_new_cost_zixun',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '50 8 * * *',
 doc_md = u"""
 产生mysql表mse_new_cost_zixun，替代任务mse_zixun_cash_stat，接口改为营销部门提供（约定为7点前提供），之前为奇点提供
@@ -1155,7 +1155,7 @@ dag = dag,
 env = env,
 task_id = 'mse_search_pids_cash_rpm',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20170224_search_pid_cash',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 8 * * *',
 doc_md = u"""
 手机浏览器搜索收益的统计，通过向营销部门龙晨旭获取pv和消耗数据并导入绿皮。对应的绿皮项目为【手浏-运营数据-搜索收益】，对应的mysql数据表为【semob_all_search_rpm_pids】
@@ -1166,7 +1166,7 @@ dag = dag,
 env = env,
 task_id = 'semob_dailyAntiCheats_jinchenxi',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/anticheating_mobilebrowser/semobDailyAntiCheats',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '50 2 * * *',
 doc_md = u"""
 手浏实时反作弊任务，rom、imei、aid、分辨率特征一块处理，处理结果放入手浏绿皮数据.
@@ -1178,7 +1178,7 @@ dag = dag,
 env = env,
 task_id = 'semob_SDKDailyAntiCheats_chemsjim',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/anticheating_mobilebrowser/semobDailySdkAntiCheats',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '55 2 * * *',
 doc_md = u"""
 手机浏览器反作弊SDK实时反作弊任务。
@@ -1189,7 +1189,7 @@ dag = dag,
 env = env,
 task_id = 'mobilebrowser_kpi_data_load_again',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_ime/kpi_push',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 3 * * *',
 doc_md = u"""
 补传手机浏览器日激活量数据到小P
@@ -1200,7 +1200,7 @@ dag = dag,
 env = env,
 task_id = 'plat_fchannel_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/plat_fchannel_stat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '50 2 * * *',
 doc_md = u"""
 将表mseCheatStat4HistoryNewUser（桌面反作弊>手机浏览器>android手机浏览器作弊指标监控>新增作弊用户统计）的作弊用户数同步给表plat_fchannel_stat_new（商业业务>手机浏览器>手机浏览器-Android用户数>android手机浏览器-按历史用户去重新增>按原始渠道号用户数统计）；
@@ -1212,7 +1212,7 @@ dag = dag,
 env = env,
 task_id = 'mse_all_import2SG',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/20150923_chengna_import2SG',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 3 * * *',
 doc_md = u"""
 将老白皮的结算数据导入到超级白皮的任务
@@ -1223,7 +1223,7 @@ dag = dag,
 env = env,
 task_id = 'mse_business_value_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20170329_business_value_stat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 9 * * *',
 doc_md = u"""
 手机浏览器android以及ios商业价值模型汇总，对应的数据库mse_bueiness_cash_detail，对应的新绿皮地址为：所有项目>商业业务>手机浏览器>手浏-运营数据-用户价值
@@ -1236,7 +1236,7 @@ dag = dag,
 env = env,
 task_id = 'semob_channelApplist_jinchenxi',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/anticheating_mobilebrowser/semobChannelApplist',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 手机浏览器渠道applist分布   用于手浏反作弊工作。
@@ -1247,7 +1247,7 @@ dag = dag,
 env = env,
 task_id = 'Semob_imeiCheck',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/anticheating_mobilebrowser/imeiCheck',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 手机浏览器IMEI格式检查
@@ -1258,7 +1258,7 @@ dag = dag,
 env = env,
 task_id = 'Semob_sdkInstallStat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/anticheating_mobilebrowser/sdkInstallStat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 手机浏览器反作弊日志统计
@@ -1269,7 +1269,7 @@ dag = dag,
 env = env,
 task_id = 'semob_modelCount_jinchenxi',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/anticheating_mobilebrowser/semobModelCount',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 水晶-android手机浏览器作弊指标监控-机型数
@@ -1280,7 +1280,7 @@ dag = dag,
 env = env,
 task_id = 'semob_modelExceptionRate_jinchenxi',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/anticheating_mobilebrowser/modelExceptionRate',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 水晶-android手机浏览器作弊指标监控-机型异常数
@@ -1291,7 +1291,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20161222_mse_channel_alart',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/datasprite/20161222_mse_channel_alart',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '50 9 * * *',
 doc_md = u"""
 20161222_mse_channel_alart
@@ -1304,7 +1304,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20160907_alart_sms',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20160907_alart_sms',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '50 9 * * *',
 doc_md = u"""
 message for BD
@@ -1315,7 +1315,7 @@ dag = dag,
 env = env,
 task_id = 'ios_iais_zhushou_daystat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/ios_iais_zhushou_daystat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:ios_iais_zhushou_daystat
@@ -1327,7 +1327,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20161220_version_pv_uv_config',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20161220_version_pv_uv_config',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:mse_version_pvuv_stat1
@@ -1339,7 +1339,7 @@ dag = dag,
 env = env,
 task_id = 'mse_specialStat_weeklyStat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/Mse_SpecialStat_WeeklyStat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 result:androidSeVerAlive.$date, upload to http server, for sales department.
@@ -1350,7 +1350,7 @@ dag = dag,
 env = env,
 task_id = 'mb_android',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mb_android',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '45 1 * * *',
 doc_md = u"""
 hive table: android
@@ -1361,7 +1361,7 @@ dag = dag,
 env = env,
 task_id = 'mb_ios',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mb_ios',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '45 1 * * *',
 doc_md = u"""
 hive table: ios
@@ -1372,7 +1372,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20170518_except_user_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20170518_except_user_stat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 1 * * *',
 doc_md = u"""
 result:${IMPORT_PATH}/business/exceptuserhis,两类用户并集（NewsAdClick的pv>10 || 取NewsAdShow的日志中小时的add到set()，len(set)>15.即超过15小时的用户）
@@ -1384,7 +1384,7 @@ dag = dag,
 env = env,
 task_id = 'imei_to_sunbo',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/imei_to_sunbo',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 1 * * *',
 doc_md = u"""
 result:${IMPORT_PATH}/imei_to_sunbo/newimei/${logDate}, load data(new imei) to sunbo
@@ -1395,7 +1395,7 @@ dag = dag,
 env = env,
 task_id = 'channelinfos',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/channelinfos',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '10 0 * * *',
 doc_md = u"""
 mysql:channelinfos,channelinfo_utf8
@@ -1406,7 +1406,7 @@ dag = dag,
 env = env,
 task_id = 'MovePhp_ValuePingBack_Stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/zhouliwu/MovePhp/allValuesPingBacks',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 本地php重构之统计数值型PingBack的任务，包含android以及ios。统计指标为uv,pv，比例，统计维度为软件版本，含有all汇总
@@ -1419,7 +1419,7 @@ dag = dag,
 env = env,
 task_id = 'mse_20161019_daufunction',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/datasprite/20161019_daufunction',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:mse_yunying_dau_stat
@@ -1431,7 +1431,7 @@ dag = dag,
 env = env,
 task_id = 'mse_android_branduserinfo',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_android_branduserinfo',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 hive task
@@ -1443,7 +1443,7 @@ dag = dag,
 env = env,
 task_id = 'mse_zixun_server_new',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_zixun_server_new',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 1 * * *',
 doc_md = u"""
 hive task
@@ -1456,7 +1456,7 @@ dag = dag,
 env = env,
 task_id = 'newabtest_mars',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/newabtest_mars',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 hive task
@@ -1468,7 +1468,7 @@ dag = dag,
 env = env,
 task_id = 'pushmsg',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/pushmsg',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 hive task
@@ -1480,7 +1480,7 @@ dag = dag,
 env = env,
 task_id = 'topadv',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/topadv',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 hive task
@@ -1492,7 +1492,7 @@ dag = dag,
 env = env,
 task_id = 'zixundetailcomment',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/zixundetailcomment',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 hive task
@@ -1504,7 +1504,7 @@ dag = dag,
 env = env,
 task_id = 'kaiping',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/kaiping',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 hive task
@@ -1518,7 +1518,7 @@ dag = dag,
 env = env,
 task_id = 'hive_mse_novel_uid_address_search',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_mse_novel_uid_address_search',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 hive task
@@ -1533,7 +1533,7 @@ dag = dag,
 env = env,
 task_id = 'hive_mse_novel_uid_user_statis',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_mse_novel_uid_user_statis',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 hive task
@@ -1546,7 +1546,7 @@ dag = dag,
 env = env,
 task_id = 'hive_mse_sdk',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_mse_sdk',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 1 * * *',
 doc_md = u"""
 hive table:mse_sdk,mse_blackuser,mse_exceptuser
@@ -1558,7 +1558,7 @@ dag = dag,
 env = env,
 task_id = 'mse_prewarning',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_prewarning',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '50 9 * * *',
 doc_md = u"""
 mysql:mse_prewarning_qidonguser_merge
@@ -1570,7 +1570,7 @@ dag = dag,
 env = env,
 task_id = 'mse_prewarning_newuser',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_prewarning',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '50 9 * * *',
 doc_md = u"""
 mysql:mse_prewarning_newuser_merge
@@ -1582,7 +1582,7 @@ dag = dag,
 env = env,
 task_id = 'mse_prewarning_search_android',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_prewarning',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '50 9 * * *',
 doc_md = u"""
 mysql:mse_prewarning_search_android
@@ -1594,7 +1594,7 @@ dag = dag,
 env = env,
 task_id = 'mse_prewarning_add_fcstatus',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_prewarning',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '50 9 * * *',
 doc_md = u"""
 mysql:update mse_prewarning_newuser_merge,mse_prewarning_qidonguser_merge set fc_status
@@ -1607,7 +1607,7 @@ dag = dag,
 env = env,
 task_id = 'mse_prewarning_dau',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_prewarning_dau',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '50 9 * * *',
 doc_md = u"""
 mse_prewarning_qidonguser_merge_dau,
@@ -1619,7 +1619,7 @@ dag = dag,
 env = env,
 task_id = 'oem_ch_fc_data',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/oem_ch_fc_data',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '50 1 * * *',
 doc_md = u"""
 mysql:oem_fc_data,oem_ch_data
@@ -1630,7 +1630,7 @@ dag = dag,
 env = env,
 task_id = 'mse_daily_province_dis',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20170308_user_province_dis',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:mse_daily_province_dis
@@ -1643,7 +1643,7 @@ dag = dag,
 env = env,
 task_id = 'hive_urlredirect_pvuv',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_urlredirect_pvuv',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_urlredirect_pvuv
@@ -1657,7 +1657,7 @@ dag = dag,
 env = env,
 task_id = 'hive_novelstation_pvuv',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_novelstation_pvuv',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_novelstation_pvuv
@@ -1671,7 +1671,7 @@ dag = dag,
 env = env,
 task_id = 'hive_pb_count',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_pb_count',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_pb_count
@@ -1685,7 +1685,7 @@ dag = dag,
 env = env,
 task_id = 'hive_novelstation_fullurl',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_novelstation_fullurl',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_novelstation_fullurl
@@ -1699,7 +1699,7 @@ dag = dag,
 env = env,
 task_id = 'hive_novelregister_count',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_novelregister_count',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_novelregister_count
@@ -1713,7 +1713,7 @@ dag = dag,
 env = env,
 task_id = 'hive_homeweather_count',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_homeweather_count',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_homeweather_count
@@ -1727,7 +1727,7 @@ dag = dag,
 env = env,
 task_id = 'hive_weather_backcode',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_weather_backcode',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_weather_backcode
@@ -1741,7 +1741,7 @@ dag = dag,
 env = env,
 task_id = 'hive_verksite_pvuv',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_verksite_pvuv',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_verksite_pvuv
@@ -1755,7 +1755,7 @@ dag = dag,
 env = env,
 task_id = 'hive_lockScreen_reasons',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_lockScreen_reasons',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_lockScreen_reasons
@@ -1767,7 +1767,7 @@ dag = dag,
 env = env,
 task_id = 'searchDepData',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/searchDepData',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 9 * * *',
 doc_md = u"""
 mysql:searchDepData
@@ -1779,7 +1779,7 @@ dag = dag,
 env = env,
 task_id = 'ipadbase',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/ipadbase',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '50 0 * * *',
 doc_md = u"""
 ipad log parse.
@@ -1791,7 +1791,7 @@ dag = dag,
 env = env,
 task_id = 'ipadkpichannel',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/ipadkpichannel',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '50 0 * * *',
 doc_md = u"""
 mysql:ipadkpichannel
@@ -1802,7 +1802,7 @@ dag = dag,
 env = env,
 task_id = 'ipadkpiver',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/ipadkpiver',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '50 0 * * *',
 doc_md = u"""
 mysql:ipadkpiver
@@ -1815,7 +1815,7 @@ dag = dag,
 env = env,
 task_id = 'hive_webvideoplay_pvuv',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_webvideoplay_pvuv',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_webvideoplay_pvuv
@@ -1829,7 +1829,7 @@ dag = dag,
 env = env,
 task_id = 'androidIDBase',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/androidIDBase',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 result:${IMPORT_PATH}/androidid/dau/$logDate, ${IMPORT_PATH}/androidid/new/$logDate, ${IMPORT_PATH}/androidid/his/$logDate
@@ -1841,7 +1841,7 @@ dag = dag,
 env = env,
 task_id = 'hisUidIos_Redis',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hisUidIos_Redis',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 1 * * *',
 doc_md = u"""
 result: load ios historyUids to redis. redis info[host=b.redis.sogou, port=2623, passward=mobilebrowser]
@@ -1852,7 +1852,7 @@ dag = dag,
 env = env,
 task_id = 'hisUidAndroid_Redis',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hisUidAndroid_Redis',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 2 * * *',
 doc_md = u"""
 result: load android historyUids to redis. redis info[host=j.redis.sogou, port=2860, passward=mobilebrowserAndroid]
@@ -1865,7 +1865,7 @@ dag = dag,
 env = env,
 task_id = 'hive_menu_android',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_menu_android',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_menu_android
@@ -1877,7 +1877,7 @@ dag = dag,
 env = env,
 task_id = 'ios_kc_newer',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/ios_kc_newer',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 result:${IMPORT_PATH}/ios_kc/dau/dau$logDate, ${IMPORT_PATH}/ios_kc/new_first/new$logDate,
@@ -1889,7 +1889,7 @@ dag = dag,
 env = env,
 task_id = 'iosPromotionNwewerCount',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/iosPromotionNwewerCount',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:iosPromotionNwewerCount
@@ -1903,7 +1903,7 @@ dag = dag,
 env = env,
 task_id = 'hive_firstPage_newfeed',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_firstPage_newfeed',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_firstPage_newfeed
@@ -1917,7 +1917,7 @@ dag = dag,
 env = env,
 task_id = 'hive_addressBar_hotword',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_addressBar_hotword',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_addressBar_hotword
@@ -1931,7 +1931,7 @@ dag = dag,
 env = env,
 task_id = 'hive_webpage_module',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_webpage_module',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_webpage_module
@@ -1945,7 +1945,7 @@ dag = dag,
 env = env,
 task_id = 'hive_webReader_errorPage',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_webReader_errorPage',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_webReader_errorPage
@@ -1957,7 +1957,7 @@ dag = dag,
 env = env,
 task_id = 'shangsong_email',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/shangsong_email',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 6 * * *',
 doc_md = u"""
 result:send email to shangsong@sogou-inc.com;yuanheng@sogou-inc.com;chenxianxin@sogou-inc.com;
@@ -1971,7 +1971,7 @@ dag = dag,
 env = env,
 task_id = 'hive_errorPage_infos',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_errorPage_infos',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_errorPage_infos
@@ -1985,7 +1985,7 @@ dag = dag,
 env = env,
 task_id = 'hive_ios_url_keyword',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_ios_url_keyword',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_ios_url_keyword
@@ -1999,7 +1999,7 @@ dag = dag,
 env = env,
 task_id = 'hive_vr_popup_andSoOn',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_vr_popup_andSoOn',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_vr_popup_andSoOn
@@ -2013,7 +2013,7 @@ dag = dag,
 env = env,
 task_id = 'hive_ChangeSiteClick_statusShow',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_ChangeSiteClick_statusShow',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_ChangeSiteClick_statusShow
@@ -2025,7 +2025,7 @@ dag = dag,
 env = env,
 task_id = 'mse_iosversion_pings_stat',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/20170518_renweiling_iosversion_pings_stat',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 ios版本用户质量的统计，对应的绿皮项目为【手浏-ios-分渠道统计>分版本质量统计】，对应的数据表为：semob_iosversion_pings_stat
@@ -2037,7 +2037,7 @@ dag = dag,
 env = env,
 task_id = 'iosKC_newerByVer',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/iosKC_newerByVer',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:iosKC_newerByVer
@@ -2049,7 +2049,7 @@ dag = dag,
 env = env,
 task_id = 'mse_channeltopversioncount_android',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser/mse_channeltopversioncount_android',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:mse_channeltopversioncount_android
@@ -2063,7 +2063,7 @@ dag = dag,
 env = env,
 task_id = 'hive_channelwarning_android_active',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_channelwarning_android_active',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 6 * * *',
 doc_md = u"""
 mysql:hive_channelwarning_android_active
@@ -2078,7 +2078,7 @@ dag = dag,
 env = env,
 task_id = 'hive_channelwarning_android_newuser',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_channelwarning_android_newuser',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 6 * * *',
 doc_md = u"""
 mysql:hive_channelwarning_android_newuser
@@ -2093,7 +2093,7 @@ dag = dag,
 env = env,
 task_id = 'hive_DesktopShortcutIcon_android',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_DesktopShortcutIcon_android',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_DesktopShortcutIcon_android
@@ -2107,7 +2107,7 @@ dag = dag,
 env = env,
 task_id = 'hive_mse_reading_false_url_pvuv_new',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_mse_reading_false_url_pvuv_new',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 9 * * *',
 doc_md = u"""
 mysql:mse_reading_false_url_pvuv_new 
@@ -2122,7 +2122,7 @@ dag = dag,
 env = env,
 task_id = 'hive_WebpageReader_ErrorInfo_android',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_WebpageReader_ErrorInfo_android',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_WebpageReader_ErrorInfo_android
@@ -2134,7 +2134,7 @@ dag = dag,
 env = env,
 task_id = 'mse_anecdote',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_anecdote',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 1 * * *',
 doc_md = u"""
 hive:mse_anecdote
@@ -2147,7 +2147,7 @@ dag = dag,
 env = env,
 task_id = 'hive_newAdTitles_android',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_newAdTitles_android',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_newAdTitles_android
@@ -2159,7 +2159,7 @@ dag = dag,
 env = env,
 task_id = 'hive_newAdTitles_ios',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_newAdTitles_ios',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:hive_newAdTitles_ios
@@ -2170,7 +2170,7 @@ dag = dag,
 env = env,
 task_id = 'channelstay_ios_count',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/channelstay_ios_count',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:channelstay_ios_count
@@ -2181,7 +2181,7 @@ dag = dag,
 env = env,
 task_id = 'mse_informationflow_browse_monitor',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_informationflow_browse_monitor',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 mysql:mse_informationflow_browse_monitor
@@ -2192,7 +2192,7 @@ dag = dag,
 env = env,
 task_id = 'mse_informationflow_novel_pvuv',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_informationflow_novel_pvuv',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 6 * * *',
 doc_md = u"""
 mysql:mse_informationflow_novel_pvuv
@@ -2203,7 +2203,7 @@ dag = dag,
 env = env,
 task_id = 'mse_noveluidversion_count_pvuv',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_noveluidversion_count_pvuv',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 6 * * *',
 doc_md = u"""
 mysql:mse_noveluidversion_count_pvuv
@@ -2214,7 +2214,7 @@ dag = dag,
 env = env,
 task_id = 'mse_informationflow_zixun_uid',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_informationflow_zixun_uid',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 6 * * *',
 doc_md = u"""
 mysql:mse_informationflow_zixun_uid
@@ -2225,7 +2225,7 @@ dag = dag,
 env = env,
 task_id = 'hive_newer_imei_androidID',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_newer_imei_androidID',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 imei and android, uid of dau
@@ -2239,7 +2239,7 @@ dag = dag,
 env = env,
 task_id = 'hive_mse_zixunSDK_influence_pvuv',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_mse_zixunSDK_influence_pvuv',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 8 * * *',
 doc_md = u"""
 mysql:hive_mse_zixunSDK_influence_pvuv
@@ -2251,7 +2251,7 @@ dag = dag,
 env = env,
 task_id = 'hive_imei_mseAndIme',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_imei_mseAndIme',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 10 * * *',
 doc_md = u"""
 task hive_newer_imei_androidID提供dau用户的imei和androidid,uid给输入法柳彤，然后柳彤对比输入法近一个月数据，将重合的标记为1.输出到路径viewfs://marsX/user/imeda/outputdata/BrowerAndInput
@@ -2267,7 +2267,7 @@ dag = dag,
 env = env,
 task_id = 'hive_mse_android_push_jiguangtouchuan',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_mse_android_push_jiguangtouchuan',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '40 9 * * *',
 doc_md = u"""
 mysql:hive_mse_android_push_jiguangtouchuan
@@ -2279,7 +2279,7 @@ dag = dag,
 env = env,
 task_id = 'mse_prewarning_ios',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_prewarning_ios',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 8 * * *',
 doc_md = u"""
 mysql:mse_prewarning_ios_qidonguser_merge
@@ -2290,7 +2290,7 @@ dag = dag,
 env = env,
 task_id = 'mse_ios_channels_uuid',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_ios_channels_uuid',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '30 8 * * *',
 doc_md = u"""
 hive:ios_channels_uuid;
@@ -2303,7 +2303,7 @@ dag = dag,
 env = env,
 task_id = 'mse_voice_zixun_android',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_voice_zixun_android',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '50 8 * * *',
 doc_md = u"""
 mysql:mse_voice_zixun_android
@@ -2314,7 +2314,7 @@ dag = dag,
 env = env,
 task_id = 'hive_mse_voice_zixun_recordvoice_pvuv',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_mse_voice_zixun_recordvoice_pvuv',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '10 9 * * *',
 doc_md = u"""
 mysql:hive_mse_voice_zixun_recordvoice_pvuv
@@ -2325,7 +2325,7 @@ dag = dag,
 env = env,
 task_id = 'mse_voice_zixun_voicebank_active',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_voice_zixun_voicebank_active',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '10 9 * * *',
 doc_md = u"""
 mysql:mse_voice_zixun_voicebank_active
@@ -2336,7 +2336,7 @@ dag = dag,
 env = env,
 task_id = 'mse_newuserappnames_android',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_newuserappnames_android',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '1 7 * * *',
 doc_md = u"""
 result:/user/mobilebrowser/outputdata/mse_newuserappnames_android/
@@ -2348,7 +2348,7 @@ dag = dag,
 env = env,
 task_id = 'salesData_rsync_1',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/salesData_rsync',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 8 * * *',
 doc_md = u"""
 result:${IMPORT_PATH}/sales_data
@@ -2359,7 +2359,7 @@ dag = dag,
 env = env,
 task_id = 'salesData_rsync_2',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/salesData_rsync',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 8 * * *',
 doc_md = u"""
 result:${IMPORT_PATH}/search_data
@@ -2370,7 +2370,7 @@ dag = dag,
 env = env,
 task_id = 'accounting_api',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/accounting_api',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 9 * * *',
 doc_md = u"""
 rsync 10.142.95.188::odin/search/nginx/html/se;10.143.23.202::odin/search/nginx/html/se;
@@ -2382,7 +2382,7 @@ dag = dag,
 env = env,
 task_id = 'mse_user_province_gps_ip',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_user_province_gps_ip',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 9 * * *',
 doc_md = u"""
 mysql:mse_user_province_gps_ip
@@ -2393,7 +2393,7 @@ dag = dag,
 env = env,
 task_id = 'hive_mse_android_firstinstall',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_mse_android_firstinstall',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '30 9 * * *',
 doc_md = u"""
 update:mse_channel_class_stats_subchannel.pingbackkeyfirstinstalluv,mse_channel_bygroup.pingbackkeyfirstinstalluv,mse_channel_class_stats_op_all.pingbackkeyfirstinstalluv,mse_channel_class_stats_op_class.pingbackkeyfirstinstalluv
@@ -2404,7 +2404,7 @@ dag = dag,
 env = env,
 task_id = 'hive_mse_android_daufunction',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_mse_android_daufunction',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '30 9 * * *',
 doc_md = u"""
 update:mse_channel_class_stats_subchannel.dauf_newuser_1day_survive,mse_channel_class_stats_subchannel.dauf_newuser_7day_survive,mse_channel_bygroup.dauf_newuser_1day_survive,mse_channel_bygroup.dauf_newuser_7day_survive
@@ -2415,7 +2415,7 @@ dag = dag,
 env = env,
 task_id = 'mse_prewarning_email',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_prewarning_email',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 11 * * *',
 doc_md = u"""
 result:send email to litingting216856@sogou-inc.com;gaosai@sogou-inc.com;zhaopei@sogou-inc.com;hongyancai@sogou-inc.com;
@@ -2427,7 +2427,7 @@ dag = dag,
 env = env,
 task_id = 'hive_mse_android_clicklogowakeupcount_pvuv',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_mse_android_clicklogowakeupcount_pvuv',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 8 * * *',
 doc_md = u"""
 mysql:hive_mse_android_clicklogowakeupcount_pvuv,update oem_fc_data,oem_ch_data,plat_fchannel_stat_new,plat_channel_stat_new set PingBackClickLogoWakeUpCount_uv
@@ -2438,7 +2438,7 @@ dag = dag,
 env = env,
 task_id = 'dau_firstinstall',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/dau_firstinstall',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 result:/user/mobilebrowser/import/firstinstall/$logDate
@@ -2449,7 +2449,7 @@ dag = dag,
 env = env,
 task_id = 'mse_120_firstinstall_retains',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_120_firstinstall_retains',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '30 7 * * *',
 doc_md = u"""
 mysql:mse_fchannel_reserved_firstinstall_survive_120
@@ -2460,7 +2460,7 @@ dag = dag,
 env = env,
 task_id = 'hive_mse_ios_syshardwarever_bychannel',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/hive_mse_ios_syshardwarever_bychannel',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '20 7 * * *',
 doc_md = u"""
 mysql:hive_mse_ios_syshardwarever_bychannel
@@ -2471,7 +2471,7 @@ dag = dag,
 env = env,
 task_id = 'adjustAllNewRetain_redpacket',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/adjustAllNewRetain_redpacket',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '30 7 * * *',
 doc_md = u"""
 mysql:plat_version_stat_new_redpacket,plat_fchannel_stat_new_redpacket
@@ -2482,7 +2482,7 @@ dag = dag,
 env = env,
 task_id = 'mse_allchannels_logoretains_redpacket',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/mse_allchannels_logoretains_redpacket',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 8 * * *',
 doc_md = u"""
 update plat_fchannel_stat_new_redpacket.logo_retain
@@ -2495,7 +2495,7 @@ dag = dag,
 env = env,
 task_id = '',
 svn_url = '',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 """)
@@ -2507,7 +2507,7 @@ dag = dag,
 env = env,
 task_id = 'fourClock',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/timer_schedule',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 4 * * *',
 doc_md = u"""
 timer schedule, 4 o'clock
@@ -2632,7 +2632,7 @@ dag = dag,
 env = env,
 task_id = 'sixClock',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/mobile_browser_new/timer_schedule',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 6 * * *',
 doc_md = u"""
 timer schedule, 6 o'clock

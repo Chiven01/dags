@@ -60,7 +60,7 @@ dag = dag,
 env = env,
 task_id = 'distinct_yaokan_back',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/distinct_yaokan_back',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 5 * * *',
 doc_md = u"""
 对策略端日志根据seqo(sessionid的序列号，每条日志的编号，去重避免发重复了)去重
@@ -72,7 +72,7 @@ dag = dag,
 env = env,
 task_id = 'dh_layber_byday',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/infoFlow/dh_layer_byday',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '20 7 * * *',
 doc_md = u"""
 导航abtest 
@@ -85,7 +85,7 @@ dag = dag,
 env = env,
 task_id = 'dh_monitor_byday',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/infoFlow/dh_layer_byday',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '40 7 * * *',
 doc_md = u"""
 底部导航日常监测
@@ -98,7 +98,7 @@ dag = dag,
 env = env,
 task_id = 'dh_coolsite_monitor_byday',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/infoFlow/dh_layer_byday',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '40 7 * * *',
 doc_md = u"""
 酷站导航日常监测
@@ -112,7 +112,7 @@ dag = dag,
 env = env,
 task_id = 'dh_coolsite_byday',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/infoFlow/dh_layer_byday',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '45 7 * * *',
 doc_md = u"""
 酷站信息流 abtest
@@ -124,7 +124,7 @@ dag = dag,
 env = env,
 task_id = 'coolsite_liucun',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/infoFlow/liucun',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '00 8 * * *',
 doc_md = u"""
 酷站信息流 全部用户留存情况
@@ -136,7 +136,7 @@ dag = dag,
 env = env,
 task_id = 'coolsite_newuser_liucun',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/infoFlow/liucun',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '15 8 * * *',
 doc_md = u"""
 酷站信息流 新增用户留存情况
@@ -150,7 +150,7 @@ results_path:/user/daohang/newsfeed/important/coolsitehisuer, /user/daohang/news
 #env = env,
 #task_id = 'page_h5_pvuv',
 #svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/infoFlow/h5',
-#bash_command ='sleep 10',
+#bash_command ='sleep 120',
 #schedule_interval = '00 9 * * *',
 #doc_md = u"""
 #H5信息流页面推广数据
@@ -163,7 +163,7 @@ dag = dag,
 env = env,
 task_id = 'dh_feed_channel',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/infoFlow/channel',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '10 9 * * *',
 doc_md = u"""
 底部导航信息流-频道统计表
@@ -176,7 +176,7 @@ dag = dag,
 env = env,
 task_id = 'dh_infoflow_liucun_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/micro_protal_retain',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '40 7 * * *',
 doc_md = u"""
 mysql:dh_infoflow_liucun_day
@@ -187,7 +187,7 @@ dag = dag,
 env = env,
 task_id = 'dh_infoflow_liucun_newuser_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/dh_infoflow_liucun_newuser_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '50 7 * * *',
 doc_md = u"""
 mysql:dh_infoflow_liucun_newuser_day
@@ -199,7 +199,7 @@ dag = dag,
 env = env,
 task_id = 'microportal_abtest_layer_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/microPortal_abtest_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '30 7 * * *',
 doc_md = u"""
 mysql:microportal_abtest_layer_day
@@ -211,7 +211,7 @@ dag = dag,
 env = env,
 task_id = 'microportal_abtest_layer_distributary_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/microPortal_abtest_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '30 7 * * *',
 doc_md = u"""
 mysql:microportal_abtest_layer_distributary_day
@@ -223,7 +223,7 @@ dag = dag,
 env = env,
 task_id = 'microportal_abtest_layer_recallsource',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/microPortal_abtest_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '30 7 * * *',
 doc_md = u"""
 mysql:microportal_abtest_layer_recallsource
@@ -235,7 +235,7 @@ dag = dag,
 env = env,
 task_id = 'microportal_monitor_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/microPortal_abtest_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '40 7 * * *',
 doc_md = u"""
 mysql:microportal_monitor_day
@@ -246,7 +246,7 @@ dag = dag,
 env = env,
 task_id = 'haoqq_daily_monitor',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/haoqq_daily_monitor',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '15 7 * * *',
 doc_md = u"""
 mysql:haoqq_daily_monitor
@@ -257,7 +257,7 @@ dag = dag,
 env = env,
 task_id = 'haoqq_dividedLayer_all',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/haoqq_dividedLayer_all',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:haoqq_dividedLayer_all
@@ -268,7 +268,7 @@ dag = dag,
 env = env,
 task_id = 'haoqq_dividedTest_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/haoqq_dividedTest_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '20 7 * * *',
 doc_md = u"""
 mysql:haoqq_dividedTest_day
@@ -279,7 +279,7 @@ dag = dag,
 env = env,
 task_id = 'haoqq_recallAna_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/haoqq_recallAnalyze_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:haoqq_recallAna_day
@@ -290,7 +290,7 @@ dag = dag,
 env = env,
 task_id = 'haoqq_daily_retain',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/haoqq_daily_retain',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 6 * * *',
 doc_md = u"""
 mysql:haoqq_daily_retain
@@ -301,7 +301,7 @@ dag = dag,
 env = env,
 task_id = 'haoqq_newer_his',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/haoqq_newer_his',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 5 * * *',
 doc_md = u"""
 result:${IMPORT_PATH}/haoqqhisuser/his${logDate},${IMPORT_PATH}/haoqqnewer/new${logDate}
@@ -312,7 +312,7 @@ dag = dag,
 env = env,
 task_id = 'haoqq_newer_retain',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/haoqq_newer_retain',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:haoqq_newer_retain
@@ -323,7 +323,7 @@ dag = dag,
 env = env,
 task_id = 'dhqq_daily_monitor',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/dhqq_daily_monitor',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:dhqq_daily_monitor
@@ -334,7 +334,7 @@ dag = dag,
 env = env,
 task_id = 'dhqq_recallAnalyze_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/dhqq_recallAnalyze_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:dhqq_recallAna_day
@@ -345,7 +345,7 @@ dag = dag,
 env = env,
 task_id = 'dhqq_dividedLayer_all',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/dhqq_dividedLayer_all',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:dhqq_dividedLayer_all
@@ -356,7 +356,7 @@ dag = dag,
 env = env,
 task_id = 'dhqq_dividedTest_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/dhqq_dividedTest_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:dhqq_dividedTest_day
@@ -367,7 +367,7 @@ dag = dag,
 env = env,
 task_id = 'dhqq_daily_retain',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/dhqq_daily_retain',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:dhqq_daily_retain
@@ -378,7 +378,7 @@ dag = dag,
 env = env,
 task_id = 'dhqq_newer_his',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/dhqq_newer_his',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 5 * * *',
 doc_md = u"""
 result:/user/daohang/newsfeed/important/dhqqhisuser, /user/daohang/newsfeed/important/dhqqnewer
@@ -389,7 +389,7 @@ dag = dag,
 env = env,
 task_id = 'dhqq_newer_retain',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/dhqq_newer_retain',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:dhqq_newer_retain
@@ -400,7 +400,7 @@ dag = dag,
 env = env,
 task_id = 'hive_ybStatics',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/hive_ybStatics',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 3 * * *',
 doc_md = u"""
 hive: ybStatics
@@ -412,7 +412,7 @@ dag = dag,
 env = env,
 task_id = 'hive_ybback_ids',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/hive_ybback_ids',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 6 * * *',
 doc_md = u"""
 mysql:hive_ybback_ids
@@ -423,7 +423,7 @@ dag = dag,
 env = env,
 task_id = 'bmwaigou_monitor_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/bmwaigou_monitor_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:bmwaigou_monitor_day
@@ -434,7 +434,7 @@ dag = dag,
 env = env,
 task_id = 'bmwaigou_recallAna_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/bmwaigou_recallAna_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:bmwaigou_recallAna_day
@@ -445,7 +445,7 @@ dag = dag,
 env = env,
 task_id = 'bmwaigou_dividedLayer_all',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/bmwaigou_dividedLayer_all',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:bmwaigou_dividedLayer_all
@@ -456,7 +456,7 @@ dag = dag,
 env = env,
 task_id = 'bmwaigou_dividedTest_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/bmwaigou_dividedTest_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:bmwaigou_dividedTest_day
@@ -467,7 +467,7 @@ dag = dag,
 env = env,
 task_id = 'bmwaigou_daily_retain',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/bmwaigou_daily_retain',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:bmwaigou_daily_retain
@@ -478,7 +478,7 @@ dag = dag,
 env = env,
 task_id = 'bmwaigou_newer_his',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/bmwaigou_newer_his',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 5 * * *',
 doc_md = u"""
 mysql:bmwaigou_newer_his
@@ -489,7 +489,7 @@ dag = dag,
 env = env,
 task_id = 'bmwaigou_newerRetain',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/bmwaigou_newer_retain',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:bmwaigou_newer_retain
@@ -500,7 +500,7 @@ dag = dag,
 env = env,
 task_id = 'mp_channel_count',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/mp_channel_count',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:mp_channel_count
@@ -511,7 +511,7 @@ mysql:mp_channel_count
 #env = env,
 #task_id = 'mp_monitorTest_Day',
 #svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/mp_monitorTest_Day',
-#bash_command ='sleep 10',
+#bash_command ='sleep 120',
 #schedule_interval = '0 7 * * *',
 #doc_md = u"""
 #mysql:mp_monitorTest_Day
@@ -522,7 +522,7 @@ dag = dag,
 env = env,
 task_id = 'bm_abtestChannel_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/bm_abtestChannel_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:bm_abtestChannel_day
@@ -533,7 +533,7 @@ dag = dag,
 env = env,
 task_id = 'mp_abtestChannel_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/mp_abtestChannel_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:mp_abtestChannel_day
@@ -544,7 +544,7 @@ dag = dag,
 env = env,
 task_id = 'bmwg_abtestChannel_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/bmwg_abtestChannel_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:bmwg_abtestChannel_day
@@ -555,7 +555,7 @@ dag = dag,
 env = env,
 task_id = 'dhqq_abtestChannel_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/dhqq_abtestChannel_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:dhqq_abtestChannel_day
@@ -566,7 +566,7 @@ dag = dag,
 env = env,
 task_id = 'haoqq_abtestChannel_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/haoqq_abtestChannel_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:haoqq_abtestChannel_day
@@ -577,7 +577,7 @@ dag = dag,
 env = env,
 task_id = 'nsp_monitor_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/nsp_monitor_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:nsp_monitor_day
@@ -588,7 +588,7 @@ dag = dag,
 env = env,
 task_id = 'nsp_recallAna_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/nsp_recallAna_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:nsp_recallAna_day
@@ -599,7 +599,7 @@ dag = dag,
 env = env,
 task_id = 'nsp_dividedLayer_all',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/nsp_dividedLayer_all',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:nsp_dividedLayer_all
@@ -610,7 +610,7 @@ dag = dag,
 env = env,
 task_id = 'nsp_dividedTest_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/nsp_dividedTest_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:nsp_dividedTest_day
@@ -621,7 +621,7 @@ dag = dag,
 env = env,
 task_id = 'nsp_daily_retain',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/nsp_daily_retain',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:nsp_daily_retain
@@ -632,7 +632,7 @@ dag = dag,
 env = env,
 task_id = 'nsp_newer_his',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/nsp_newer_his',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 5 * * *',
 doc_md = u"""
 result:${IMPORT_PATH}/nsphisuser/his${logDate}, ${IMPORT_PATH}/nspnewer/new${logDate}
@@ -643,7 +643,7 @@ dag = dag,
 env = env,
 task_id = 'nsp_newer_retain',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/nsp_newer_retain',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:nsp_newer_retain
@@ -654,7 +654,7 @@ dag = dag,
 env = env,
 task_id = 'allNewsFeeds_click',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/allNewsFeeds_click',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:allNewsFeeds_click
@@ -665,7 +665,7 @@ dag = dag,
 env = env,
 task_id = 'mp_daily_retain',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/mp_daily_retain',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:mp_daily_retain
@@ -676,7 +676,7 @@ dag = dag,
 env = env,
 task_id = 'mp_testbynum_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/mp_testbynum_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:mp_testbynum_day
@@ -687,7 +687,7 @@ dag = dag,
 env = env,
 task_id = 'mp_newer_his',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/mp_newer_his',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 5 * * *',
 doc_md = u"""
 mysql:mp_newer_his
@@ -698,7 +698,7 @@ dag = dag,
 env = env,
 task_id = 'mp_newer_retain',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/mp_newer_retain',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:mp_newer_retain
@@ -709,7 +709,7 @@ dag = dag,
 env = env,
 task_id = 'pcPopup_monitor_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/pcPopup_monitor_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:pcPopup_monitor_day
@@ -720,7 +720,7 @@ dag = dag,
 env = env,
 task_id = 'pcPopup_recallAna_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/pcPopup_recallAna_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:pcPopup_recallAna_day
@@ -731,7 +731,7 @@ dag = dag,
 env = env,
 task_id = 'pcPopup_dividedLayer_all',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/pcPopup_dividedLayer_all',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:pcPopup_dividedLayer_all
@@ -742,7 +742,7 @@ dag = dag,
 env = env,
 task_id = 'pcPopup_dividedTest_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/pcPopup_dividedTest_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:pcPopup_dividedTest_day
@@ -753,7 +753,7 @@ dag = dag,
 env = env,
 task_id = 'pcPopup_newer_his',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/pcPopup_newer_his',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 result:/user/daohang/newsfeed/important/pcpopuphisuser,/user/daohang/newsfeed/important/pcpopupnewer
@@ -764,7 +764,7 @@ dag = dag,
 env = env,
 task_id = 'pcPopup_newer_retain',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/pcPopup_newer_retain',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:pcPopup_newer_retain
@@ -775,7 +775,7 @@ dag = dag,
 env = env,
 task_id = 'pcPopup_daily_retain',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/pcPopup_daily_retain',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:pcPopup_daily_retain
@@ -786,7 +786,7 @@ dag = dag,
 env = env,
 task_id = 'cs_monitorEndnum_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/cs_monitorEndnum_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:cs_monitorEndnum_day
@@ -797,7 +797,7 @@ dag = dag,
 env = env,
 task_id = 'pcSidebar_module',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/common_modules_base',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 2 * * *',
 doc_md = u"""
 do nothing, use to clear special dag-tasks,pcSidebar
@@ -808,7 +808,7 @@ dag = dag,
 env = env,
 task_id = 'pcSidebar_monitor_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/pcSidebar_monitor_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:pcSidebar_monitor_day
@@ -819,7 +819,7 @@ dag = dag,
 env = env,
 task_id = 'pcSidebar_recallAna_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/pcSidebar_recallAna_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:pcSidebar_recallAna_day
@@ -830,7 +830,7 @@ dag = dag,
 env = env,
 task_id = 'pcSedebar_dividedTest_day',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/pcSedebar_dividedTest_day',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:pcSedebar_dividedTest_day
@@ -841,7 +841,7 @@ dag = dag,
 env = env,
 task_id = 'pcSedebar_dividedLayer_all',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/pcSedebar_dividedLayer_all',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:pcSedebar_dividedLayer_all
@@ -852,7 +852,7 @@ dag = dag,
 env = env,
 task_id = 'pcSidebar_daily_retain',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/pcSidebar_daily_retain',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:pcSidebar_daily_retain
@@ -863,7 +863,7 @@ dag = dag,
 env = env,
 task_id = 'pcSidebar_newer_his',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/pcSidebar_newer_his',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 result:newsfeed/important/pcsidebarhisuser,newsfeed/important/pcsidebarnewer
@@ -874,7 +874,7 @@ dag = dag,
 env = env,
 task_id = 'pcSidebar_newer_retain',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/pcSidebar_newer_retain',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:pcSidebar_newer_retain
@@ -885,7 +885,7 @@ dag = dag,
 env = env,
 task_id = 'bmwaigou_module',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/common_modules_base',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 2 * * *',
 doc_md = u"""
 do nothing, use to clear special dag-tasks,bmwaigou
@@ -896,7 +896,7 @@ dag = dag,
 env = env,
 task_id = 'coolsite_module',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/common_modules_base',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 2 * * *',
 doc_md = u"""
 do nothing, use to clear special dag-tasks,coolsite
@@ -907,7 +907,7 @@ dag = dag,
 env = env,
 task_id = 'bottom_module',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/common_modules_base',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 2 * * *',
 doc_md = u"""
 do nothing, use to clear special dag-tasks,bottom
@@ -918,7 +918,7 @@ dag = dag,
 env = env,
 task_id = 'mp_module',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/common_modules_base',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 2 * * *',
 doc_md = u"""
 do nothing, use to clear special dag-tasks,mp_module
@@ -929,7 +929,7 @@ dag = dag,
 env = env,
 task_id = 'nsp_module',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/common_modules_base',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 2 * * *',
 doc_md = u"""
 do nothing, use to clear special dag-tasks,nsp_module
@@ -940,7 +940,7 @@ dag = dag,
 env = env,
 task_id = 'haoqq_module',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/common_modules_base',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 2 * * *',
 doc_md = u"""
 do nothing, use to clear special dag-tasks,haoqq_module
@@ -951,7 +951,7 @@ dag = dag,
 env = env,
 task_id = 'dhqq_module',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/common_modules_base',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 2 * * *',
 doc_md = u"""
 do nothing, use to clear special dag-tasks,dhqq_module
@@ -962,7 +962,7 @@ dag = dag,
 env = env,
 task_id = 'pcPopup_module',
 svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/common_modules_base',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 2 * * *',
 doc_md = u"""
 do nothing, use to clear special dag-tasks,pcPopup_module
@@ -978,7 +978,7 @@ dag = dag,
 env = env,
 task_id = '',
 svn_url = '',
-bash_command ='sleep 10',
+bash_command ='sleep 120',
 schedule_interval = '0 7 * * *',
 doc_md = u"""
 mysql:

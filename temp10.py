@@ -44,7 +44,7 @@ for n in range(lens[0]):
     env = env,
     task_id = temp,
     svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/temp',
-    bash_command ='sleep 10',
+    bash_command ='sleep 120',
     schedule_interval = '0 5 * * *',
     doc_md = u"""""")
     temps.append(temp)
@@ -57,7 +57,7 @@ for n in range(lens[1]):
     env = env,
     task_id = taemp,
     svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/taemp',
-    bash_command ='sleep 10',
+    bash_command ='sleep 120',
     schedule_interval = '0 5 * * *',
     doc_md = u"""""")
     taemps.append(taemp)
@@ -70,7 +70,7 @@ for n in range(lens[2]):
     env = env,
     task_id = tbemp,
     svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/tbemp',
-    bash_command ='sleep 10',
+    bash_command ='sleep 120',
     schedule_interval = '0 5 * * *',
     doc_md = u"""""")
     tbemps.append(tbemp)
@@ -83,7 +83,7 @@ for n in range(lens[3]):
     env = env,
     task_id = tcemp,
     svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/tcemp',
-    bash_command ='sleep 10',
+    bash_command ='sleep 120',
     schedule_interval = '0 5 * * *',
     doc_md = u"""""")
     tcemps.append(tcemp)
@@ -96,7 +96,7 @@ for n in range(lens[4]):
     env = env,
     task_id = tdemp,
     svn_url = 'http://svn.sogou-inc.com/svn/sogouime/DataAnalysis/platform_java/imedaapptask/newsfeed/tdemp',
-    bash_command ='sleep 10',
+    bash_command ='sleep 120',
     schedule_interval = '0 5 * * *',
     doc_md = u"""""")
     tdemps.append(tdemp)
