@@ -21,7 +21,7 @@ default_args = {
     'retry_delay': timedelta(minutes=5),
     'execution_timeout': timedelta(hours=23),
     'depends_on_past': True,
-    'start_date': utils.dates.days_ago(2)
+    'start_date': utils.dates.days_ago(0)
 }
 
 dag = DAG(
