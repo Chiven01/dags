@@ -15,7 +15,7 @@ from datetime import datetime,timedelta
 default_args = {
     'owner': 'chenxianxin',
     'email': ['chenxianxin@sogou-inc.com'],
-    'email_on_failure': True,
+    'email_on_failure': False,
     'email_on_retry': True,
     'retries': 1,
     'retry_delay': timedelta(minutes=5),
